@@ -3,13 +3,11 @@
 
 SPUMONI is a software tool for **performing rapid read classifications on sequencing reads using a read's matching statistics (or a related quantity called pseudo-matching lengths).** 
 
-SPUMONI is based on another software tool called [MONI](https://github.com/maxrossi91/moni) which is a MEM-finder and aligner for pan-genomes. `MONI` uses prefix-free parsing of the text [2][3] to build the Burrows-Wheeler Transform (BWT) of the reference collection, the suffix array (SA) samples at the beginning and end of each run, and the threshold positions[1]. 
-
-**For more details on installation/using SPUMONI, please refer to the [wiki page](https://github.com/oma219/spumoni/wiki/1.-Home) which covers those areas in detail.**
+SPUMONI is based on another software tool called [MONI](https://github.com/maxrossi91/moni) which is a MEM-finder and aligner for pan-genomes. `MONI` uses prefix-free parsing of the text to build the Burrows-Wheeler Transform (BWT) of the reference collection, the suffix array (SA) samples at the beginning and end of each run, and the threshold positions. 
 
 ## Step 1: Building an Index
 
-After installing SPUMONI on your machine, the first step would be to build an index over the reference you want to use for your experiment. This reference will be a FASTA file (and it can be a multi-FASTA for pan-genomes). SPUMONI allows you to either build it over a single FASTA file, or you can specify a list of genomes that you want to include in the index. [See the wiki for more details.](https://github.com/oma219/spumoni/wiki/4.-Building-SPUMONI-Indexes) 
+After installing SPUMONI on your machine, the first step would be to build an index over the reference you want to use for your experiment. This reference will be a FASTA file (and it can be a multi-FASTA for pan-genomes). SPUMONI allows you to either build it over a single FASTA file, or you can specify a list of genomes that you want to include in the index. 
 
 For example, if you would want to do host depletion, you could index a human genome and build both the matching statistic and pseudo-matching lengths index using the command below: 
 
